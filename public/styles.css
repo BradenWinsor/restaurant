@@ -1,0 +1,137 @@
+*{
+  background-color: grey;
+  /*display: inline-block;*/
+  box-sizing: border-box;
+}
+.picture{
+  background-image: url("./pictures/logo2.png");
+}
+.body {
+  display: inline-flex;
+  max-width: 50%;
+
+}
+#menuOptions {
+  width: 120px;
+  background-color: white;
+  border: ;
+
+}
+.comtainer{
+
+}
+.container3 {
+  margin: ;
+
+}
+.foodMenu{
+  border: 3px solid black;
+  margin: auto;
+  background-color: DarkKhaki;
+  float:left;
+  width: 200px;
+  /*background-image: url("./pictures/menubackground.jpg");*/
+  height: 309px;
+    text-decoration: underline;
+}
+.foodMenu1 {
+float: left;
+
+}
+.item{
+  background-color: DarkKhaki;
+  list-style: none;
+  margin: 0 0 3px 0;
+}
+.pullpork {
+  background-image: url("./pictures/pulledPork.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.cheeseburger {
+  background-image: url("./pictures/cheeseburger.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.ribs {
+  background-image: url("./pictures/ribs.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.bisonribs {
+  background-image: url("./pictures/bisonribs.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.topserlion {
+  background-image: url("./pictures/topserlion.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.hamburger{
+  background-image: url("./pictures/hamburger.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.doubleburger{
+  background-image: url("./pictures/doubleburger.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.doublecheeseburger {
+  background-image: url("./pictures/doublecheese.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.megacheese {
+  background-image: url("./pictures/megacheese.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: DarkKhaki;
+}
+.dinoribs {
+
+}
+.listmenu {
+  text-decoration: underline;
+  color: black;
+  text-align: center;
+  background-color: DarkKhaki;
+  /*border: 3px solid black;*/
+  width: 100px;
+}
+.menuButtons {
+  align-content: center;
+  background-color: white;
+}
+.popover {
+  display: inline-block;
+  position: absolute;
+  /*bottom: 400px;
+  right: 450px;px;*/
+  width: 200px;
+  background-color: rgba(189, 183, 107, 1);
+  border: 3px solid black;
+  height: 309px;
+
+}
+.popoverCONTAINER {
+
+}

@@ -1,0 +1,45 @@
+.foodoptions {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.buildyourown {
+  align-items: center;
+  text-align: center;
+}
+.submitbutton {
+  padding-top: 20px;
+  margin-bottom: 60px;
+  padding-bottom: 100px;
+}
+.buildbutton {
+  margin-top: 40px;
+  border-bottom: : 3px solid black
+
+
+}
+.orderoptions {
+  padding-bottom: 20px;
+}
+.opts {
+  border: 3px solid black;
+  border-radius: 45px;
+  background-color: white;
+  width: 330px;
+}
+.toppins {
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 330px;
+  text-align: center;
+}
+.title1 {
+  font-size: 50px;
+  text-decoration: underline;
+}
+.title2{
+  font-size: 25px;
+}
+.menubuttons {
+  border-radius: 35px;
+}

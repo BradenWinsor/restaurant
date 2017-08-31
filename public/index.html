@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html ng-app="foodApp">
+<head>
+  <title>Over the Edge GRILL</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+  <link rel="stylesheet" type="text/css" href="orderstyles.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style type="text/css">
+
+  </style>
+</head>
+<body ng-controller="foodController">
+
+<div class="cafename"><p>The "OVER THE EDGE" Cafe</p></div>
+  <section id="carousel1" class="fade slider">
+    <div>
+      <img src="/pictures/cheese1.jpg">
+    </div>
+    <div>
+      <img src="../pictures/cheeseburger.jpg">
+    </div>
+    <div>
+      <img src="../pictures/doublecheese.jpg">
+    </div>
+    <div>
+      <img src="../pictures/hamburger.jpg">
+    </div>
+    <div>
+      <img src="../pictures/megacheese.jpg">
+    </div>
+    <div>
+      <img src="../pictures/megaultra.jpg">
+    </div>
+  </section>
+  <div class="menubuttons"><button ui-sref='home' class="menubuttons2">Home</button><button ui-sref='menu' class="menubuttons2">Menu</button><button ui-sref='about' class="menubuttons2">About</button><button ui-sref='order' class="menubuttons2">Order Online</button><button ui-sref='admin' class="menubuttons2">Admin</button></div>
+
+  <ui-view>
+
+  </ui-view>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+
+      $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000
+});
+    });
+  </script>
+
+</body>
+<footer class="footer">
+
+</footer>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="./app.js"></script>
+<script src="./controller.js"></script>
+<script src="./service.js"></script>
+
+</html>

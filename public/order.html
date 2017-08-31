@@ -1,0 +1,132 @@
+
+<div class="foodoptions">
+  <p class="title1">ORDER HERE</br></p>
+  <div class="orderoptions" >
+<select ng-model="entree" class="opts">
+  <option value="default">Pick an Entree</option>
+  <option value="Pulled Pork">Pulled Pork</option>
+  <option value="Top Serlion">Top Serlion</option>
+  <option value="Hamburger">Hamburger</option>
+  <option value="Double Burger">Double Burger</option>
+  <option value="Cheese Burger">Cheese Burger</option>
+  <option value="Double Chesse Burger">Double Chesse Burger</option>
+  <option value="Mega Cheese Burger">Mega Cheese Burger</option>
+  <option value="Ultra Burger">Ultra Burger</option>
+  <option value="Mega Ultra Burger">Mega Ultra Burger</option>
+  <option value="Ribs Half Rack">Ribs Half Rack</option>
+  <option value="Ribs Full Rack">Ribs Full Rack</option>
+  <option value="Bison Ribs">Bison Ribs</option>
+  <option value="Dinosuar Ribs">Dinosuar Ribs</option>
+</select><br/>
+<select ng-model="side1" class="opts" ng-show="entree">
+  <option value="default">Pick a Side</option>
+  <option value="frenchfries">French Fries</option>
+  <option value="mashedpotatoes">Mashed Potatoes</option>
+  <option value="salad">House Salad</option>
+  <option value="macaronicheese">Mac N Cheese</option>
+  <option value="potatosalad">Potato Salad</option>
+  <option value="beans">Baked Beans</option>
+  <option value="pastasalad">Pasta Salad</option>
+  <option value="bakedpotato">Baked Potato</option>
+</select><br/>
+<select class="opts" ng-model="side2" ng-show="side1">
+  <option value="default">Pick another Side</option>
+  <option value="frenchfries">French Fries</option>
+  <option value="mashedpotatoes">Mashed Potatoes</option>
+  <option value="salad">House Salad</option>
+  <option value="macaronicheese">Mac N Cheese</option>
+  <option value="potatosalad">Potato Salad</option>
+  <option value="beans">Baked Beans</option>
+  <option value="pastasalad">Pasta Salad</option>
+  <option value="bakedpotato">Baked Potato</option>
+</select><br/>
+<select ng-model="drink" ng-show="side2" class="opts">
+  <option value="default">Pick a Drink</option>
+  <option value="rootbeer">Root Beer</option>
+  <option value="drpepper">Dr.Pepper</option>
+  <option value="lemonade">Lemonade</option>
+  <option value="sprite">Sprite</option>
+  <option value="creamsoda">Cream Soda</option>
+  <option value="pepsi">Pepsi</option>
+  <option value="coke">Coka-Cola</option>
+  <option value="diet">DIET</option>
+</select><br/>
+</div>
+
+<br/>
+
+
+<label class="buildbutton">Or build your own: <input type="checkbox" ng-model="checked" ng-init="checked=false" /></label><br/>
+
+<span ng-if="checked" class="animate-if">
+
+
+<div class="buildyourown">
+
+<h4 class="title1">Build Your Own Burger!</h4>
+
+<h4 class="title2">How many Patties do you want?</h4></option>
+<select class="opts" ng-model="patties">
+  <option  value="1">1</option><br/>
+  <option  value="2" >2<br/></option>
+  <option  value="3" >3<br/></option>
+  <option  value="4" >4<br/></option>
+  <option  value="1 5lb patty" >1 5lb Patty<br/></option>
+</select>
+<br/>
+
+<h4 ng-show="patties" class="title2">Cheese?</h4>
+
+<select class="opts" ng-model="cheese" ng-show="patties">
+  <option> Well, I dont know...</option>
+  <option> Yes I would LOVE cheese</option>
+  <option> No, turns out I hate cheese</option>
+</select></br>
+
+
+<h4 class="title2">Are you sure?</h4>
+<select class="opts" ng-model="confirm">
+<option> Yes, I am comfortable with my choice.</option>
+<option> No, turns out I was wrong before.</option>
+</select><br/>
+
+<h4 class="title2" >Do you want EXTRA cheese?</h4>
+<select class="opts" ng-model="extra">
+<option> YES! PLEASE GIVE ME MORE CHEESE!</option>
+<option> No, I am happy with the regular amount of cheese.</option>
+<option> No! I TOLD YOU NO CHEESE!</option>
+</select></br>
+
+
+
+<h4 class="title2">What Toppings would you like? </br> (hold ctrl to select multiple toppins)</h4>
+<select multiple class="toppins">
+<option>Lettuce</option>
+<option>Tomato</option>
+<option>Pickles</option>
+<option>Mayonaise</option>
+<option>Mustard</option>
+<option>Ketchup</option>
+<option>Onions</option>
+<option>Avacado</option>
+<option>Hot Sause</option>
+<option>Bacon</option>
+</select>
+
+<h4 class="title2">What kind of Bun do you want?</h4>
+<select class="opts" ng-model="bun">
+<option name="bun" >Plain White</option>
+<option name="bun" >Potato</option>
+<option name="bun" >Brioche</option>
+<option name="bun" >Pretzel</option>
+</select></br>
+</div>
+</span>
+</br>
+
+<div>
+{{patties}}{{entree +' '+ drink +' '+ side1 +' '+ side2}}
+</div>
+<div class="submitbutton"><button>SUBMIT</button></div
+</form>
+</div>

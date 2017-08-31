@@ -1,0 +1,146 @@
+* {
+  background-color: ;
+}
+.footer {
+  background-image: url('../pictures/greybackground.jpg');
+  height: 90px;
+
+}
+
+.cafename {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-color: darkgrey;
+  background-image: url('../pictures/greybackground.jpg');
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+ .carousel-caption {
+    z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+ .carousel .item {
+    width: 100%;
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+@media (min-width: 768px) {
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+}
+img {
+    background: red;
+    height: 100px;
+}
+.menubuttons {
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+  }
+  .menubuttons2 {
+    border-radius: 35px;
+
+    background-color: white;
+  }
+.underContainer {
+
+ text-align: center;
+}
+.locations {
+
+    width: 33%;
+    float: left;
+    /*border: 3px solid black;*/
+}
+.reviews  {
+
+    width: 33%;
+    float: left;
+    /*border: 3px solid black;*/
+}
+.awards {
+
+    width: 33%;
+    float: left;
+    /*border: 3px solid black;*/
+}
+li {
+  margin: 20px 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+    height: 400px;
+
+}
+
+.slick-slide {
+  margin: 0px 20px;
+  height: 400px;
+  border: 3px solid black;
+  /*max-width: 393px;*/
+  min-width: 252px;
+  background-size: cover;
+}
+
+.slick-slide img {
+
+  width: 100%;
+  max-width: 393px;
+  min-width: 252px;
+  height: 393px;
+  border: black;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.aboutContent {
+  text-align: center;
+}
+.adminContent {
+display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+align-items: center;
+
+}
+.adminContent div {
+  display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.adminSubmit {
+  margin-top: 20px;
+}
